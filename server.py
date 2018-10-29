@@ -40,3 +40,4 @@ def add_paper():
 
 
 application = add_cors(application)
+application.run(port=os.environ.get('PORT', 8000), debug=True)
